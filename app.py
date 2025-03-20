@@ -8,7 +8,8 @@ st.title("Airbnb")
 st.markdown("Airbnb Analysis. Julia Caballero.")
 
 
-df = pd.read_csv("airbnb.csv", encoding="utf-8")
+df = pd.read_csv("/Users/juliacaballerogomez/Desktop/Guided Lab/airbnb.csv", encoding="utf-8")
+
 df['price'] = pd.to_numeric(df['price'], errors='coerce')
 
 
